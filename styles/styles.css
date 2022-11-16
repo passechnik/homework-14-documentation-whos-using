@@ -11,9 +11,9 @@ body {
 header {
     width: 100%;
     height: 80px;
+    top: 10px;
     position: fixed;
-    margin-bottom: 70px;
-    padding-top: 10px;
+    z-index: 1;
 }
 
 .menu {
@@ -21,11 +21,95 @@ header {
 
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 nav {
     margin-left: 50px;
     margin-right: 601px;
+    margin-top: 17px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: black;
 }
 
-a {
-    text-decoration: none;
+select {
+    border: none;
+    font-family: 'Tourney';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.04em;
+}
+
+.sidebar {
+    width:fit-content;
+    height: 462px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    top: 150px;
+    position: sticky;
+    padding: 10px;
+    float: left;
+}
+
+.sidebar__item {
+    border-bottom: 1px solid #BDBDBD;
+    font-family: 'Francois One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: black;
+}
+
+#documentation {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 70px;
+    width: 785px;
+    margin-top: 180px;
+    margin-left: 535px;
+}
+
+h2 {
+    font-family: 'Francois One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 48px;
+}
+
+sup {
+    font-family: 'Farro';
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
 }
