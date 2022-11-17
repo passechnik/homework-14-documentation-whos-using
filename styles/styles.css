@@ -54,11 +54,6 @@ select {
     letter-spacing: 0.04em;
 }
 
-._container {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-}
 
 .sidebar {
     height: 462px;
@@ -89,6 +84,9 @@ select {
     align-items: flex-start;
     gap: 70px;
     margin-top: 180px;
+    margin-left: 380px;
+    padding-left: 30px;
+    width: 785px;
 }
 
 section {
